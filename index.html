@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevSpace</title>
+    <title>RodX | Desarrollador Junior Full-Stack (React, Python, Odoo ERP)</title>
+    <meta name="description" content="Portfolio de RodX, desarrollador junior especializado en Odoo ERP, React y desarrollo full-stack. Proyectos, experiencia y contacto.">
+    <meta property="og:title" content="RodX | Desarrollador Junior Full-Stack">
+    <meta property="og:description" content="Portfolio de RodX, desarrollador junior especializado en Odoo ERP, React y desarrollo full-stack.">
+    <meta property="og:type" content="website">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -23,7 +27,7 @@
     <!-- Nav Bar In -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">DevSpace</a>
+            <a href="index.html" class="navbar-brand">RodX</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,9 +61,8 @@
                             </div>
                         </div>
                         <div class="hero-btn">
-                            <a class="btn"
-                                href="https://wa.me/59163389950?text=Hola,%20estoy%20interesado%20en%20desarrollar%20un%20sitio%20web.%20Me%20gustaría%20cotizar%20un%20proyecto"
-                                target="_blank" rel="noopener noreferrer">Contactar</a>
+                            <a class="btn" href="#contact">Contáctame</a>
+                            <a class="btn btn-outline" href="https://drive.google.com/file/d/1j5aIbIhih5AY9emitPG8zCbQPKHWETTc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Ver CV</a>
                         </div>
                     </div>
                 </div>
@@ -137,8 +140,8 @@
     <div class="service" id="service">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Servicios</p>
-                <h2>Soluciones a Medida</h2>
+                <p>Áreas de Experiencia</p>
+                <h2>Lo Que Puedo Aportar</h2>
             </div>
             <div class="row">
                 <!-- 1. Desarrollo Odoo -->
@@ -290,28 +293,6 @@
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio-1.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Services Website</h3>
-                            <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio-2.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>eCommerce Website</h3>
-                            <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
                 <!-- 1. G8 Soluciones (Odoo Dev) -->
                 <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-wrap">
@@ -387,20 +368,23 @@
                     <div class="col-md-8">
                         <div class="contact-form">
                             <div id="success"></div>
-                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <form name="sentMessage" id="contactForm" action="https://formsubmit.co/rlr50537@gmail.com" method="POST">
+                                <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_captcha" value="false">
                                 <div class="control-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Nombre" required
+                                    <input type="text" class="form-control" name="Nombre" id="name" placeholder="Nombre" required
                                         data-validation-required-message="Por favor, ingresa tu nombre" />
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico"
+                                    <input type="email" class="form-control" name="Email" id="email" placeholder="Correo electrónico"
                                         required
                                         data-validation-required-message="Por favor, ingresa tu correo electrónico" />
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" id="message" placeholder="Mensaje" required
+                                    <textarea class="form-control" name="Mensaje" id="message" placeholder="Mensaje" required
                                         data-validation-required-message="Por favor, ingresa tu mensaje"></textarea>
                                     <p class="help-block"></p>
                                 </div>
@@ -575,21 +559,19 @@
                         <p>rlr50537@gmail.com</p>
                     </div>
                     <div class="footer-social">
-                        <a href="https://twitter.com/Rodx75" target="_blank" rel="noopener noreferrer"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="https://facebook.com/Rodx75" target="_blank" rel="noopener noreferrer"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="https://youtube.com/@Rodx75" target="_blank" rel="noopener noreferrer"><i
-                                class="fab fa-youtube"></i></a>
-                        <a href="https://instagram.com/Rodx75" target="_blank" rel="noopener noreferrer"><i
-                                class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Rodx75" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i></a>
                         <a href="https://linkedin.com/in/Rodx75" target="_blank" rel="noopener noreferrer"><i
                                 class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/Rodx75" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/Rodx75" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="container copyright">
-                <p>&copy; <a href="#home">DevSpace</a>, All Rights Reserved | Designed By <a
+                <p>&copy; <a href="#home">RodX</a>, All Rights Reserved | Designed By <a
                         href="https://github.com/Rodx75" target="_blank" rel="noopener noreferrer">Rodx</a></p>
             </div>
         </div>
