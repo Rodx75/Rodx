@@ -58,16 +58,24 @@
     
     
     // Typed Initiate
-    if ($('.hero .hero-text h2').length == 1) {
-        var typed_strings = $('.hero .hero-text .typed-text').text();
-        var typed = new Typed('.hero .hero-text h2', {
-            strings: typed_strings.split(', '),
-            typeSpeed: 100,
-            backSpeed: 20,
-            smartBackspace: false,
-            loop: true
-        });
+    function initTyped() {
+        if (window.rodxTyped) {
+            window.rodxTyped.destroy();
+        }
+        if ($('.hero .hero-text h2').length == 1) {
+            $('.hero .hero-text h2').empty();
+            var typed_strings = $('.hero .hero-text .typed-text').text();
+            window.rodxTyped = new Typed('.hero .hero-text h2', {
+                strings: typed_strings.split(', '),
+                typeSpeed: 100,
+                backSpeed: 20,
+                smartBackspace: false,
+                loop: true
+            });
+        }
     }
+    initTyped();
+    window.rodxReinitTyped = initTyped;
     
     
     // Skills
@@ -97,6 +105,15 @@
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
+    });
+
+    // Re-layout once every image has finished loading, so isotope doesn't
+    // measure card heights before the (slow) project screenshots arrive.
+    $(window).on('load', function () {
+        portfolioIsotope.isotope('layout');
+    });
+    $('.portfolio-container img').on('load', function () {
+        portfolioIsotope.isotope('layout');
     });
 
     $('#portfolio-filter li').on('click', function () {
