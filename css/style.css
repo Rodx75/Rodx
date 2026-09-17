@@ -1167,6 +1167,10 @@ a:focus {
     font-weight: 100;
 }
 
+.portfolio .portfolio-text a.btn i {
+    font-size: 20px;
+}
+
 
 .portfolio .portfolio-item:hover a.btn {
     color: rgb(132, 144, 255);
