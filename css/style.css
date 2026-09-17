@@ -1,9 +1,10 @@
 :root {
     --bg-base: #0a0a14;
-    --glass-bg: rgba(255, 255, 255, 0.055);
-    --glass-bg-strong: rgba(255, 255, 255, 0.09);
-    --glass-border: rgba(255, 255, 255, 0.12);
-    --glass-blur: blur(18px) saturate(160%);
+    --glass-bg: rgba(255, 255, 255, 0.11);
+    --glass-bg-strong: rgba(255, 255, 255, 0.16);
+    --glass-border: rgba(255, 255, 255, 0.28);
+    --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.35), inset 0 0 40px rgba(255, 255, 255, 0.04);
+    --glass-blur: blur(22px) saturate(200%);
     --text-body: #b7b9d6;
     --text-heading: #f3f3fb;
     --accent-1: rgb(132, 144, 255);
@@ -29,24 +30,24 @@ body::before,
 body::after {
     content: "";
     position: fixed;
-    width: 620px;
-    height: 620px;
+    width: 720px;
+    height: 720px;
     border-radius: 50%;
-    filter: blur(140px);
-    opacity: 0.28;
+    filter: blur(130px);
+    opacity: 0.5;
     z-index: -1;
     pointer-events: none;
 }
 
 body::before {
-    top: -180px;
-    left: -200px;
+    top: -220px;
+    left: -240px;
     background: var(--accent-1);
 }
 
 body::after {
-    bottom: -220px;
-    right: -200px;
+    bottom: -260px;
+    right: -240px;
     background: var(--accent-2);
 }
 
@@ -54,8 +55,27 @@ body::after {
     position: absolute;
     border-radius: 50%;
     filter: blur(120px);
-    opacity: 0.22;
+    opacity: 0.4;
     z-index: 0;
+    pointer-events: none;
+}
+
+/* A third, roaming blob so mid-page glass cards also have color to catch */
+.about::before,
+.experience::before,
+.blog::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 560px;
+    height: 560px;
+    background: var(--accent-1);
+    opacity: 0.16;
+    filter: blur(130px);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
     pointer-events: none;
 }
 @font-face { 
@@ -860,7 +880,7 @@ a:focus {
     border: 1px solid var(--glass-border);
     border-right: 5px solid var(--accent-2);
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), var(--glass-highlight);
     transition: transform 0.3s, border-color 0.3s;
 }
 
@@ -960,7 +980,7 @@ a:focus {
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--glass-border);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 0 0 0 transparent;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), var(--glass-highlight);
     transition: ease-out 0.5s, transform 0.3s;
 }
 
@@ -978,7 +998,9 @@ a:focus {
     align-items: center;
     justify-content: center;
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-highlight);
 
 }
 
@@ -1117,12 +1139,12 @@ a:focus {
     margin: -30px 15px 30px 15px;
     display: flex;
     align-items: center;
-    background: rgba(20, 18, 30, 0.65);
+    background: rgba(30, 26, 46, 0.55);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--glass-border);
     border-radius: 14px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .25), var(--glass-highlight);
 }
 
 .portfolio .portfolio-text h3 {
@@ -1235,7 +1257,7 @@ a:focus {
     -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--glass-border);
     border-radius: 24px;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3), var(--glass-highlight);
 }
 
 .contact .contact-form input {
@@ -1323,7 +1345,7 @@ a:focus {
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--glass-border);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), var(--glass-highlight);
     transition: transform 0.3s, border-color 0.3s;
 }
 
