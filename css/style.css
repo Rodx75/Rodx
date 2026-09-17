@@ -351,6 +351,26 @@ a:focus {
     margin-right: 10px;
 }
 
+.hero .hero-btn .btn-outline {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: none;
+    border-color: #ffffff;
+}
+
+.hero .hero-btn .btn-outline:hover {
+    color: rgb(132, 144, 255);
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+    .hero .hero-btn .btn {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 991.98px) {
     .hero {
         min-height: 85vh;
