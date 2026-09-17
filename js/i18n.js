@@ -56,6 +56,8 @@
             "blog.eyebrow": "Recent Work",
             "blog.title": "Recent Work &amp; Live Sites",
             "blog.visit": "Visit <i class=\"fa fa-angle-right\"></i>",
+            "blog.visitCode": "View code <i class=\"fa fa-angle-right\"></i>",
+            "blog.item0.text": "Full-stack task manager built from scratch: a REST API in ASP.NET Core (C#) with Entity Framework Core and SQLite, and a React + TypeScript frontend with optimistic updates and category/priority filters.",
             "blog.item1.text": "Developed custom Odoo ERP modules, tailored e-commerce snippets (dynamic carousels, conditional price lists), and multi-branch visibility controls.",
             "blog.item2.text": "Frontend development with React for the Dr. Clic medical platform, building dynamic dental modules (interactive odontogram, visual diagnosis) and designing its website.",
             "blog.item3.text": "UI/UX design from scratch for an English-learning platform. Responsive visual structuring, asset optimization, and a UX-focused interface.",
