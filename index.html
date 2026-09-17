@@ -33,14 +33,17 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="#home" class="nav-item nav-link active">Inicio</a>
-                    <a href="#about" class="nav-item nav-link">Sobre Mi</a>
-                    <a href="#service" class="nav-item nav-link">Servicios</a>
-                    <a href="#experience" class="nav-item nav-link">Experiencia</a>
-                    <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                    <a href="#blog" class="nav-item nav-link">Proyectos</a>
-                    <a href="#contact" class="nav-item nav-link">Contáctame</a>
+                <div class="navbar-nav ml-auto align-items-lg-center">
+                    <a href="#home" class="nav-item nav-link active" data-i18n="nav.home">Inicio</a>
+                    <a href="#about" class="nav-item nav-link" data-i18n="nav.about">Sobre Mi</a>
+                    <a href="#service" class="nav-item nav-link" data-i18n="nav.service">Servicios</a>
+                    <a href="#experience" class="nav-item nav-link" data-i18n="nav.experience">Experiencia</a>
+                    <a href="#portfolio" class="nav-item nav-link" data-i18n="nav.portfolio">Portfolio</a>
+                    <a href="#blog" class="nav-item nav-link" data-i18n="nav.blog">Proyectos</a>
+                    <a href="#contact" class="nav-item nav-link" data-i18n="nav.contact">Contáctame</a>
+                    <button type="button" id="langToggle" class="lang-toggle" aria-label="Switch language">
+                        <span data-lang-opt="es">ES</span><span class="lang-sep">/</span><span data-lang-opt="en">EN</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -54,15 +57,15 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="hero-content">
                         <div class="hero-text">
-                            <p>I'm</p>
+                            <p data-i18n="hero.im">Soy</p>
                             <h1>RODX</h1>
                             <h2></h2>
-                            <div class="typed-text">Software Developer, Odoo Technical Developer, Full Stack Engineer, React Python Developer
+                            <div class="typed-text" data-i18n="hero.roles">Desarrollador de Software, Desarrollador Técnico Odoo, Ingeniero Full Stack, Desarrollador React y Python
                             </div>
                         </div>
                         <div class="hero-btn">
-                            <a class="btn" href="#contact">Contáctame</a>
-                            <a class="btn btn-outline" href="https://drive.google.com/file/d/1j5aIbIhih5AY9emitPG8zCbQPKHWETTc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Ver CV</a>
+                            <a class="btn" href="#contact" data-i18n="hero.contactBtn">Contáctame</a>
+                            <a class="btn btn-outline" href="https://drive.google.com/file/d/1j5aIbIhih5AY9emitPG8zCbQPKHWETTc/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="hero.cvBtn">Ver CV</a>
                         </div>
                     </div>
                 </div>
@@ -89,11 +92,11 @@
                     <div class="col-lg-6">
                         <div class="about-content">
                             <div class="section-header text-left">
-                                <p>Sobre mí</p>
-                                <h2>Especialista en Desarrollo & ERP</h2>
+                                <p data-i18n="about.eyebrow">Sobre mí</p>
+                                <h2 data-i18n="about.title">Especialista en Desarrollo & ERP</h2>
                             </div>
                             <div class="about-text">
-                                <p>
+                                <p data-i18n="about.text">
                                     Desarrollador de Software enfocado en la creación de soluciones empresariales y plataformas web modernas. Cuento con experiencia práctica implementando personalizaciones avanzadas en <strong>Odoo ERP (Python/XML)</strong> y construyendo interfaces dinámicas e interactivas con <strong>React</strong>. Apasionado por la arquitectura limpia, la optimización de procesos y el desarrollo web full-stack.
                                 </p>
                             </div>
@@ -113,21 +116,21 @@
                                     <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p>Backend & Bases de Datos (.NET, PostgreSQL, REST APIs)</p>
+                                    <p data-i18n="about.skill3">Backend & Bases de Datos (.NET, PostgreSQL, REST APIs)</p>
                                     <p>80%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p>Diseño UI/UX & Web Responsive</p>
+                                    <p data-i18n="about.skill4">Diseño UI/UX & Web Responsive</p>
                                     <p>80%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <a class="btn mt-3" href="https://drive.google.com/file/d/1j5aIbIhih5AY9emitPG8zCbQPKHWETTc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+                            <a class="btn mt-3" href="https://drive.google.com/file/d/1j5aIbIhih5AY9emitPG8zCbQPKHWETTc/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="about.downloadBtn">Descargar CV</a>
                         </div>
                     </div>
                 </div>
@@ -140,8 +143,8 @@
     <div class="service" id="service">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Áreas de Experiencia</p>
-                <h2>Lo Que Puedo Aportar</h2>
+                <p data-i18n="service.eyebrow">Áreas de Experiencia</p>
+                <h2 data-i18n="service.title">Lo Que Puedo Aportar</h2>
             </div>
             <div class="row">
                 <!-- 1. Desarrollo Odoo -->
@@ -151,8 +154,8 @@
                             <i class="fa fa-cogs"></i>
                         </div>
                         <div class="service-text">
-                            <h3>Desarrollo Odoo ERP</h3>
-                            <p>
+                            <h3 data-i18n="service.item1.title">Desarrollo Odoo ERP</h3>
+                            <p data-i18n="service.item1.text">
                                 Creación de módulos personalizados en Python/XML, snippets a medida para e-commerce, configuración de reglas de negocio, reportes QWeb.
                             </p>
                         </div>
@@ -165,8 +168,8 @@
                             <i class="fa fa-code"></i>
                         </div>
                         <div class="service-text">
-                            <h3>Desarrollo Frontend & React</h3>
-                            <p>
+                            <h3 data-i18n="service.item2.title">Desarrollo Frontend & React</h3>
+                            <p data-i18n="service.item2.text">
                                 Construcción de aplicaciones web interactivas, paneles administrativos e interfaces médicas o comerciales dinámicas con React, JavaScript y modernas herramientas frontend.
                             </p>
                         </div>
@@ -179,8 +182,8 @@
                             <i class="fa fa-layer-group"></i>
                         </div>
                         <div class="service-text">
-                            <h3>Desarrollo Full-Stack & APIs</h3>
-                            <p>
+                            <h3 data-i18n="service.item3.title">Desarrollo Full-Stack & APIs</h3>
+                            <p data-i18n="service.item3.text">
                                 Diseño e implementación de APIs robustas en .NET, modelado de bases de datos relacionales (PostgreSQL/MySQL) y estructuración de arquitecturas escalables.
                             </p>
                         </div>
@@ -193,8 +196,8 @@
                             <i class="fa fa-laptop-code"></i>
                         </div>
                         <div class="service-text">
-                            <h3>Diseño Web & Maquetación UI/UX</h3>
-                            <p>
+                            <h3 data-i18n="service.item4.title">Diseño Web & Maquetación UI/UX</h3>
+                            <p data-i18n="service.item4.text">
                                 Maquetación adaptable a dispositivos móviles (Responsive Design), landing pages corporativas optimizadas para SEO y sitios web institucionales.
                             </p>
                         </div>
@@ -209,17 +212,17 @@
     <div class="experience" id="experience">
         <div class="container">
             <header class="section-header text-center wow zoomIn" data-wow-delay="0.2s">
-                <p>Un Resumen</p>
-                <h2>Experiencias de Trabajos</h2>
+                <p data-i18n="experience.eyebrow">Un Resumen</p>
+                <h2 data-i18n="experience.title">Experiencias de Trabajos</h2>
             </header>
             <div class="timeline">
             <!-- 1 -->
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">Sep 2025 - Feb 2026</div>
-                        <h2>Odoo Technical Intern</h2>
+                        <div class="timeline-date" data-i18n="experience.item1.date">Sep 2025 - Feb 2026</div>
+                        <h2 data-i18n="experience.item1.role">Odoo Technical Intern</h2>
                         <h4>Appex - Santa Cruz, Bo</h4>
-                        <p>
+                        <p data-i18n="experience.item1.text">
                             Programación en Python y XML para módulos personalizados: snippets web dinámicos, reglas de
                             stock multi-sucursal y despliegue de SKU.
                             Desarrollo de reglas de negocio para segmentación de precios (público minorista y listas
@@ -233,10 +236,10 @@
                 <!-- 2 -->
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">Sep - Dic 2025</div>
-                        <h2>Frontend & Web Developer</h2>
+                        <div class="timeline-date" data-i18n="experience.item2.date">Sep - Dic 2025</div>
+                        <h2 data-i18n="experience.item2.role">Frontend & Web Developer</h2>
                         <h4>Rocaz IT - Santa Cruz, Bo</h4>
-                        <p>
+                        <p data-i18n="experience.item2.text">
                             Diseño Web & Branding: Creación de landing pages coherentes con la identidad corporativa de
                             Rocaz IT para cada servicio.
                             Sistema médico Dr. Clic (React): Desarrollo de módulos especializados dentro del sistema de
@@ -245,26 +248,26 @@
                             para el registro clínico odontológico (morfología, oclusión dental y ficha visual).
                         </p>
                     </div>
-                </div> 
+                </div>
                 <!-- 3 -->
                 <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">Ago - Dic 2024</div>
-                        <h2>Web Designer & Frontend Developer</h2>
+                        <div class="timeline-date" data-i18n="experience.item3.date">Ago - Dic 2024</div>
+                        <h2 data-i18n="experience.item3.role">Web Designer & Frontend Developer</h2>
                         <h4>Librería Plenitud Cristo - Santa Cruz, Bo</h4>
-                        <p>
+                        <p data-i18n="experience.item3.text">
                             Diseñé la interfaz para la librería Plenitud Cristo, asegurando que la navegación sea fácil
                             y que la estética sea acorde a la identidad de la marca.
                         </p>
                     </div>
-                </div>                               
+                </div>
                 <!-- 4 -->
                 <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                     <div class="timeline-text">
-                        <div class="timeline-date">Jul - Dic 2023</div>
-                        <h2>Web Developer</h2>
+                        <div class="timeline-date" data-i18n="experience.item4.date">Jul - Dic 2023</div>
+                        <h2 data-i18n="experience.item4.role">Web Developer</h2>
                         <h4>Fisiomed - Santa Cruz, Bo</h4>
-                        <p>
+                        <p data-i18n="experience.item4.text">
                             Desarrollé el diseño frontend para la página de Nutfimed, creando una interfaz intuitiva y
                             atractiva que mejora la experiencia del usuario.
                         </p>
@@ -280,12 +283,12 @@
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>My Portfolio</p>
-                <h2>Galería de Proyectos</h2>
+                <h2 data-i18n="portfolio.title">Galería de Proyectos</h2>
             </div>
             <div class="row">
                 <div class="col-12">
                     <ul id="portfolio-filter">
-                        <li data-filter="*" class="filter-active">Todos</li>
+                        <li data-filter="*" class="filter-active" data-i18n="portfolio.filterAll">Todos</li>
                         <li data-filter=".filter-1">Design</li>
                         <li data-filter=".filter-2">Dev</li>
                         <li data-filter=".filter-3">Soon</li>
@@ -350,7 +353,7 @@
                         </div>
                         <div class="portfolio-text">
                             <h3>Full-Stack Dev</h3>
-                            <span class="badge bg-warning text-dark mt-1">En Desarrollo</span>
+                            <span class="badge bg-warning text-dark mt-1" data-i18n="portfolio.inProgress">En Desarrollo</span>
                         </div>
                     </div>
                 </div>
@@ -374,22 +377,25 @@
                                 <input type="hidden" name="_captcha" value="false">
                                 <div class="control-group">
                                     <input type="text" class="form-control" name="Nombre" id="name" placeholder="Nombre" required
+                                        data-i18n-placeholder="contact.name"
                                         data-validation-required-message="Por favor, ingresa tu nombre" />
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="control-group">
                                     <input type="email" class="form-control" name="Email" id="email" placeholder="Correo electrónico"
                                         required
+                                        data-i18n-placeholder="contact.email"
                                         data-validation-required-message="Por favor, ingresa tu correo electrónico" />
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="control-group">
                                     <textarea class="form-control" name="Mensaje" id="message" placeholder="Mensaje" required
+                                        data-i18n-placeholder="contact.message"
                                         data-validation-required-message="Por favor, ingresa tu mensaje"></textarea>
                                     <p class="help-block"></p>
                                 </div>
                                 <div>
-                                    <button class="btn" type="submit" id="sendMessageButton">Enviar</button>
+                                    <button class="btn" type="submit" id="sendMessageButton" data-i18n="contact.send">Enviar</button>
                                 </div>
                             </form>
                         </div>
@@ -404,8 +410,8 @@
     <div class="blog" id="blog">
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Publicaciones</p>
-                <h2>Trabajos Recientes & Sitios Oficiales</h2>
+                <p data-i18n="blog.eyebrow">Publicaciones</p>
+                <h2 data-i18n="blog.title">Trabajos Recientes & Sitios Oficiales</h2>
             </div>
             <div class="row">
                 <!-- Appex -->
@@ -421,12 +427,12 @@
                                 <p><i class="far fa-list-alt"></i>Odoo Dev</p>
                                 <p><i class="far fa-calendar-alt"></i>2025-2026</p>
                             </div>
-                            <p>
-                                Desarrollo de módulos personalizados en Odoo ERP, creación de snippets e-commerce a medida 
+                            <p data-i18n="blog.item1.text">
+                                Desarrollo de módulos personalizados en Odoo ERP, creación de snippets e-commerce a medida
                                 (carruseles dinámicos, listas de precios condicionales) e integración de control de visibilidad multi-sucursal.
                             </p>
                             <a class="btn" href="https://g8soluciones.com.bo/" target="_blank"
-                                rel="noopener noreferrer">Visitar <i class="fa fa-angle-right"></i></a>
+                                rel="noopener noreferrer" data-i18n="blog.visit">Visitar <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -443,13 +449,13 @@
                                 <p><i class="far fa-list-alt"></i>Front Dev & Web Design</p>
                                 <p><i class="far fa-calendar-alt"></i>2025</p>
                             </div>
-                            <p>
-                                Desarrollo frontend con React para la plataforma médica Dr. Clic, 
-                                construyendo módulos dinámicos para odontología (odontograma interactivo, diagnóstico visual) 
+                            <p data-i18n="blog.item2.text">
+                                Desarrollo frontend con React para la plataforma médica Dr. Clic,
+                                construyendo módulos dinámicos para odontología (odontograma interactivo, diagnóstico visual)
                                 y el diseño de su página web.
                             </p>
                             <a class="btn" href="https://drclic.rocazit.com/" target="_blank"
-                                rel="noopener noreferrer">Visitar <i class="fa fa-angle-right"></i></a>
+                                rel="noopener noreferrer" data-i18n="blog.visit">Visitar <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -466,12 +472,12 @@
                                 <p><i class="far fa-list-alt"></i>Web Design & Frontend</p>
                                 <p><i class="far fa-calendar-alt"></i>2025</p>
                             </div>
-                            <p>
-                                Diseño UI/UX desde cero para la plataforma de aprendizaje de inglés. 
+                            <p data-i18n="blog.item3.text">
+                                Diseño UI/UX desde cero para la plataforma de aprendizaje de inglés.
                                 Estructuración visual responsive, optimización de assets e interfaz enfocada en la experiencia de usuario.
                             </p>
                             <a class="btn" href="https://influido.rocazit.com/" target="_blank"
-                                rel="noopener noreferrer">Visitar <i class="fa fa-angle-right"></i></a>
+                                rel="noopener noreferrer" data-i18n="blog.visit">Visitar <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -488,12 +494,12 @@
                                 <p><i class="far fa-list-alt"></i>Web Design & Frontend</p>
                                 <p><i class="far fa-calendar-alt"></i>2025</p>
                             </div>
-                            <p>
-                                Implementación de mejoras estéticas, rediseño de interfaz y 
-                                optimización de componentes interactivos para la web corporativa 
+                            <p data-i18n="blog.item4.text">
+                                Implementación de mejoras estéticas, rediseño de interfaz y
+                                optimización de componentes interactivos para la web corporativa
                                 oficial de la empresa de software Rocaz IT.
                             </p>
-                            <a class="btn" href="https://rocazit.com/" target="_blank" rel="noopener noreferrer">Visitar
+                            <a class="btn" href="https://rocazit.com/" target="_blank" rel="noopener noreferrer" data-i18n="blog.visit">Visitar
                                 <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
@@ -511,12 +517,12 @@
                                 <p><i class="far fa-list-alt"></i>E-Commerce UI & Frontend</p>
                                 <p><i class="far fa-calendar-alt"></i>Ago-2024</p>
                             </div>
-                            <p>
-                                Maquetación y lógica frontend para catálogo de productos. 
+                            <p data-i18n="blog.item5.text">
+                                Maquetación y lógica frontend para catálogo de productos.
                                 Incluye sistema de filtrado en tiempo real en el cliente y flujo de navegación enfocado en e-commerce.
                             </p>
                             <a class="btn" href="https://rodx75.github.io/Libreria/" target="_blank"
-                                rel="noopener noreferrer">Visitar <i class="fa fa-angle-right"></i></a>
+                                rel="noopener noreferrer" data-i18n="blog.visit">Visitar <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -533,12 +539,12 @@
                                 <p><i class="far fa-list-alt"></i>Web Design & Frontend</p>
                                 <p><i class="far fa-calendar-alt"></i>Sep-2023</p>
                             </div>
-                            <p>
+                            <p data-i18n="blog.item6.text">
                                 Plataforma web con interfaz fluida pensada para la reserva de citas y exploración
                                 de servicios médicos. Implementación de diseño intuitivo y adaptable a móviles
                             </p>
                             <a class="btn" href="https://rodx75.github.io/Nutfimed/" target="_blank"
-                                rel="noopener noreferrer">Visitar <i class="fa fa-angle-right"></i></a>
+                                rel="noopener noreferrer" data-i18n="blog.visit">Visitar <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -599,6 +605,7 @@
 
     <!-- Template Js -->
     <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>
